@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Loonie
+Comment=Loonie P2P Cryptocurrency
+Comment[fr]=Loonie, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Loonie, eşten eşe kriptografik sanal para birimi
+Exec=loonie-qt %u
+Terminal=false
+Type=Application
+Icon=loonie128
+MimeType=x-scheme-handler/loonie;
+Categories=Office;Finance;

@@ -1,0 +1,26 @@
+# /etc/conf.d/loonied: config file for /etc/init.d/loonied
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/loonie/loonie.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/loonied"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/loonied.pid"
+
+# Where to write loonied data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/loonied"
+
+# User and group to own loonied process
+#BITCOIND_USER="loonie"
+#BITCOIND_GROUP="loonie"
+
+# Path to loonied executable
+#BITCOIND_BIN="/usr/bin/loonied"
+
+# Nice value to run loonied under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
