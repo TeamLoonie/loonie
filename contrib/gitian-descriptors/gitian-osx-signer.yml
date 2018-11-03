@@ -1,7 +1,7 @@
 ---
 name: "loonie-dmg-signer"
 suites:
-- "trusty"
+- "precise"
 architectures:
 - "amd64"
 packages:
