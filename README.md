@@ -71,7 +71,7 @@ with collateral of 50 000 LNI
 		<td>Amount of Rewards Per Block</td><td>2 Rewards, 1 for Masternodes, 1 for Wallet Staking</td>
 	</tr>
 	<tr>
-		<td>Coin Maturity to Stake</td><td>150 Blocks</td>
+		<td>Coin Maturity to Stake</td><td>10 Blocks</td>
 	</tr>
 </table>
 # Loonie
