@@ -51,7 +51,7 @@ with collateral of 50 000 LNI
 		<td>Masternodes</td><td>Yes - 50000 Loonie Required</td>
 	</tr>
 	<tr>
-		<td>Wallet Staking</td><td>Yes - 1 to infinite Send</td>
+		<td>Wallet Staking</td><td>Yes - 1 to infinite Loonie</td>
 	</tr>
 </table>
 
