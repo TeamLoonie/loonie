@@ -54,13 +54,13 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x001"));
+    (0, uint256("0x00000944b26677decf813faf1da74f80e48bc37923d151050d6af6eade4dc5ce"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1541173083, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    2000        // * estimated number of transactions per day after checkpoint
+    200        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -113,14 +113,14 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Loonie: 1 day
-        nTargetSpacing = 1 * 60;  // Loonie: 2 minute
+        nTargetTimespan = 1 * 60; // Loonie: 1 minute
+        nTargetSpacing = 1 * 60;  // Loonie:  1 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 130000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 1000;
+        nLastPOWBlock = 2000;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = 90000;
         nAccumulatorStartHeight = 1;
@@ -173,12 +173,12 @@ public:
         assert(hashGenesisBlock == uint256("0x00000944b26677decf813faf1da74f80e48bc37923d151050d6af6eade4dc5ce"));
         assert(genesis.hashMerkleRoot == uint256("0x641b30be5595ccf753c0451888d3c1c1799ce2ea66d4cec1467b9f1759b1a8f2"));
 
- //        vSeeds.push_back(CDNSSeedData("seed1.loonie.info", "45.77.36.214"));
- //        vSeeds.push_back(CDNSSeedData("seed2.loonie.info", "149.28.136.143"));
-	// vSeeds.push_back(CDNSSeedData("explorer.loonie.info", "149.28.136.115"));
+         vSeeds.push_back(CDNSSeedData("195.181.244.223", "195.181.244.223"));
+         vSeeds.push_back(CDNSSeedData("40.122.72.200", "40.122.72.200"));
+	     vSeeds.push_back(CDNSSeedData("40.68.1.137", "40.68.1.137"));
     
-        vFixedSeeds.clear();
-        vSeeds.clear(); 
+        //vFixedSeeds.clear();
+        //vSeeds.clear(); 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 48); //LOONIE Addresses start with L
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 2);
