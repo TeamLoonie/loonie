@@ -1,0 +1,11 @@
+[Protocol]
+exec=loonie-qt '%u'
+protocol=loonie
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
